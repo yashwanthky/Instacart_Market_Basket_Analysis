@@ -15,14 +15,13 @@ Understand patterns in orders placed on Instacart
 
 ## Process Flow
 
-### Data Loading
-### Data Cleaning
-### EDA
-### Modeling
-### Summary
+- Data Loading
+- Data Cleaning
+- EDA
+- Modeling
+- Summary
 
 ## Implementation Plan
-
 
 ### EDA
 
