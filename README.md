@@ -1,11 +1,11 @@
 # Market_Basket_Analysis
-### Understand patterns in orders placed on Instacart
+Understand patterns in orders placed on Instacart
 
 ## Team Members: 
 
-	- Sahit Koganti (M13262499)
+- Sahit Koganti (M13262499)
 	
-	- Yashwanth Kumar Yelamanchili (M13437471)
+- Yashwanth Kumar Yelamanchili (M13437471)
 
 ## Plan for EDA
 
