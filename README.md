@@ -1,4 +1,5 @@
 # Market_Basket_Analysis
+
 Understand patterns in orders placed on Instacart
 
 ## Team Members 
@@ -22,6 +23,24 @@ Understand patterns in orders placed on Instacart
 - Summary
 
 ## Implementation Plan
+
+### Data Extraction
+
+- Web scraping technique has been implemented to fetch the data from the link mentioned above
+
+- The technique also includes unzipping the data file and placing the individual datasets in the same folder where the code is located 
+
+### Data Cleaning
+
+- Data counts, missing values and unique values have been checked
+
+- Missing values have been replaced with '999' for the column 'days_since_prior_order'
+
+### Data Merging
+
+- All the individual datasets have been merged to form a master dataset
+
+- We will form smaller subsets from this master dataset for performing EDA
 
 ### EDA
 
