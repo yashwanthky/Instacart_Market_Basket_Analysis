@@ -65,6 +65,8 @@ Understand patterns in orders placed on Instacart
 
 ### Data Exploration
 
+In this project, we will try and understand some patterns in customer behavior. Some of the questions we deal with in this project are :
+
 - What time and day of the week are the customers placing the orders?
 
 - What are the products which drive the orders i.e. products which make or break the order?
