@@ -1,4 +1,4 @@
-# Market_Basket_Analysis
+# Market Basket Analysis
 
 Understand patterns in orders placed on Instacart
 
@@ -16,21 +16,34 @@ Understand patterns in orders placed on Instacart
 
 ## Process Flow
 
-- Data Loading
-- Data Cleaning
-- EDA
-- Modeling
-- Summary
+- Introduction
+- Data Loading and Cleaning
+- Data Merging
+- Data Exploration
+- Data Modeling
+- Conclusion
 
 ## Implementation Plan
 
-### Data Extraction
+### Packages Used
+
+- matplotlib.pyplot
+- seaborn
+- pandas
+- os
+- numpy
+- warnings
+- collections
+- itertools
+- sklearn
+
+### Data Loading and Cleaning
 
 - Web scraping technique has been implemented to fetch the data from the link mentioned above
+ - First we need to run the notebook "Data_Download_using_WebScraping" to download the data as a zipped folder and unzip the files
+ - Then, we need to run the notebook "Market_Basket_Analysis" for the entire analysis 
 
-- The technique also includes unzipping the data file and placing the individual datasets in the same folder where the code is located 
-
-### Data Cleaning
+- Aisle tagging was done manualy to identify preishable and non-perishable products. This new tagged file is uploaded onto Github and the new file is read into the notebook using the Github link
 
 - Data counts, missing values and unique values have been checked
 
@@ -42,28 +55,61 @@ Understand patterns in orders placed on Instacart
 
 - We will form smaller subsets from this master dataset for performing EDA
 
-### EDA
+### Data Exploration
 
-- Orders count by the day of Week and Hour 
+- What time and day of the week are the customers placing the orders?
 
-	- Top products by day of week 
+- What are the products which drive the orders i.e. products which make or break the order?
 
-	- Top products by hour 
+- What are the products that are being re-ordered?
 
-- Orders count by departments 
+- What percentage of products being ordered are perishables / non-perishables?
 
-	- Top products by department 
+- What are the departments / aisles that have the most number of orders? and re-orders?
 
-- Orders count by Aisles 
+- Does the re-order ratio of products change by time or day of the week?
 
-	- Top products by aisles 
+- Is there any relation between the order in which the products are added to the cart with the re-order of that product?
 
-- Order count in the Non-perishables products - filter departments/aisles 
+- How frequently does the customer place the order on the Instacart app?
 
-- Recency - Frequency Analysis 
+- How many products does a customer generally buy in each order?
 
-	- Grouping customer by recency 
+### Data Modeling
 
-- Add_to_cart_order 
+5 models have been implemented in this project
 
-	- Analyzing the rank in which products are added across baskets 
+- Association Rules - This will help in product recommendations i.e. based on the historical trasactions, this will tell us what product could be suggested if 
+the customer adds product A to his cart
+
+- Principal Component Analysis - This will tell us how can we reduce the dimensionality of the dataset while retaining the percentage of variability being explained. This will 
+feed in as an input into the clustering analysis where we decide on the number of clusters
+
+- Customer Segmentation - We use k-means clustering to group customers into 5 clusters based on their ordering pattern from aisles
+
+- Word2vec - This will help in calculating user similarity score based on the products purchased and the order in which the orders are purchased. Word2vec can be 
+thought of as a two-layer neural net that processes text by “vectorizing” words. Its input is a text corpus and its output is a set of vectors: feature vectors that represent words in that corpus
+
+- TF-IDF Transformation and Vectorization - This will also help in calculating user similarity score based on the products purchased and the order in which the 
+orders are purchased. This principle is based on matrix decomposition
+
+
+## References
+
+The following notebooks and articles are used as references for implementing exploration and modeling techniques
+
+- https://gist.github.com/jeremystan/c3b39d947d9b88b3ccff3147dbcf6c6b
+
+- https://www.slideshare.net/dominodatalab/data-science-at-instacart-making-ondemand-profitable
+
+- https://artindatascience.wordpress.com/instacart-kaggle-competition/
+
+- https://www.kaggle.com/sudalairajkumar/simple-exploration-notebook-instacart 
+
+- https://www.kaggle.com/omarito/word2vec-for-products-analysis-0-01-lb 
+
+- https://www.kaggle.com/kashdotten/customer-segmentation-pca-elbow-k-means-apriori 
+
+- https://www.kaggle.com/asindico/customer-segments-with-pca 
+
+- https://www.kaggle.com/datatheque/association-rules-mining-market-basket-analysis 
