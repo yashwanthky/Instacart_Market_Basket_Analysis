@@ -40,6 +40,7 @@ Understand patterns in orders placed on Instacart
 ### Data Loading and Cleaning
 
 - Web scraping technique has been implemented to fetch the data from the link mentioned above
+
  - First we need to run the notebook "Data_Download_using_WebScraping" to download the data as a zipped folder and unzip the files
  - Then, we need to run the notebook "Market_Basket_Analysis" for the entire analysis 
 
