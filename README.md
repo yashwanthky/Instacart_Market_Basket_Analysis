@@ -98,7 +98,7 @@ feed in as an input into the clustering analysis where we decide on the number o
 - Customer Segmentation - We use k-means clustering to group customers into 5 clusters based on their ordering pattern from aisles
 
 - Word2vec - This will help in calculating user similarity score based on the products purchased and the order in which the orders are purchased. Word2vec can be 
-thought of as a two-layer neural net that processes text by “vectorizing” words. Its input is a text corpus and its output is a set of vectors: feature vectors that represent words in that corpus
+thought of as a two-layer neural net that processes text by “vectorizing” words. Its input is a text corpus and its output is a set of feature vectors that represent words in that corpus
 
 - TF-IDF Transformation and Vectorization - This will also help in calculating user similarity score based on the products purchased and the order in which the 
 orders are purchased. This principle is based on matrix decomposition
